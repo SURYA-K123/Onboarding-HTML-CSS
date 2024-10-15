@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+    <form action="#" method="post" id="application-form">
+        <fieldset>
+            <h1>Application Form</h1>
+
+            <section>
+                <p>personal information</p>
+                <label for="name">name : <span class="required-field">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Enter name" required>
+                <label for="dob">date of birth : <span class="required-field">*</span></label>
+                <input type="date" id="dob" name="dob" placeholder="Enter dob" required>
+                <label for="degree">degree : <span class="required-field">*</span></label>
+                <select name="degree" id="degree" required>
+                    <option value="be">BE</option>
+                    <option value="btech">B.Tech</option>
+                </select>
+                <label for="phno">phone :<span class="required-field">*</span></label>
+                <input type="number" name="phno" maxlength="10" minlength="10" id="phno" placeholder="0000000000"
+                    required>
+                <label for="gender">gender :<span class="required-field">*</span></label>
+                <input type="radio" name="gender" id="gender" value="male"><span class="gender-value">male</span>
+                <input type="radio" name="gender" id="gender" value="male"><span class="gender-value">female</span>
+                <label for="email">email:<span class="required-field">*</span></label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+            </section>
+            <section class="address">
+                <p>address</p>
+                <label for="addr-line-1">line 1 :<span class="required-field">*</span></label>
+                <input type="text" name="addr-line-1" id="addr-line-1" required>
+                <label for="addr-line-2">line 2 (optional):</label>
+                <input type="text" name="addr-line-2" id="addr-line-2">
+                <label for="pincode">pincode :<span class="required-field">*</span></label>
+                <input type="number" minlength="6" maxlength="6" name="pincode" id="pincode" required>
+            </section>
+
+
+            <section class="documents">
+                <p>documents</p>
+                <label for="photo">photo :<span class="required-field">*</span> </label>
+                <input type="file" name="photo" id="photo" accept="*/*" required>
+                <label for="address-proof">address proof (aadhar, pan):<span class="required-field">*</span> </label>
+                <input type="file" name="aadhar" id="aadhar" required>
+            </section>
+            <label for="submit">
+                <input type="submit" value="Submit">
+            </label>
+        </fieldset>
+    </form>
+</body>
+
+</html>

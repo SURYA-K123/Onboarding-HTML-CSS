@@ -1,0 +1,111 @@
+*{
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url("./images/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    height: 70%;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: rgba(255, 255, 255, 0.743);
+    overflow: scroll;
+}
+
+h1{
+    height: 50px;
+    background-color: rgb(240, 240, 240);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    line-height: 50px;
+    padding: 10px 30px;
+}
+
+table {
+    height: 100%;
+    width: 95%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: auto;
+    overflow: scroll;
+}
+
+thead {
+    height: 50px;
+    border-top-left-radius: 10px;
+    position: sticky;
+    top: 0;
+}
+
+th,
+td {
+    min-width: 150px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+th{
+    background-color: rgb(240, 240, 240);
+    text-transform: capitalize;
+}
+
+th:first-child{
+    border-top-left-radius: 10px;
+}
+th:last-child{
+    border-top-right-radius: 10px;
+}
+
+tbody tr {
+    min-height: 50px;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.868);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(240, 240, 240);
+}
+
+tbody tr td:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+td:nth-child(4) span{
+    display: inline-block;
+    background-color: rgba(79, 165, 42, 0.386);
+    border: 1px solid rgb(79, 186, 34);
+    border-radius: 50px;
+    padding: 5px 15px;
+    color: rgb(35, 115, 0);
+}
+
+tbody tr:last-child td:first-child{
+    border-bottom-left-radius: 10px;
+}
+
+tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 10px;
+}
+
+.photo{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url("./images/auth.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}

@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+    width: 100%;
+    background-color: #18a369;
+    border-bottom: 0.5px solid rgb(255, 255, 255);
+}
+
+
+.logo{
+    display: inline-block;
+    height: 50px;
+}
+
+.navbar-button {
+    display: none; 
+    border: none;
+    height: 100%;
+    width: 50px;
+    background-color: #18a369;
+}
+
+.navbar-icon {
+    font-size: 40px;
+    color: white;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: none;
+}
+
+.main-menu, .accounts-menu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.menu-item{
+    height: 100%;
+}
+
+.menu-item a{
+    position: relative;
+    display: inline-block;
+    line-height: 80px;
+    color: white;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.menu-item a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    height: 3px;
+    width: 0;
+}
+
+.menu-item a:hover::after{
+    width: 100%;
+}
+
+.menu-btn{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.btn-request-demo a {
+    border: 3px solid #18a369;
+    background-color: white;
+    color: #18a369;
+}
+
+.btn-start-trial a {
+    border: 3px solid white;
+    background-color: #18a369;
+    color: white;
+} 
+
+
+#intro {
+    position: relative;
+    height: 80%;
+    background: url("./images/big-ideas-amazing-talent-the-recruiting-software-that-brings-them-together_2x.webp");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #18a369;
+    min-height: 650px;
+}
+
+#description {
+    position: absolute;
+    width: 45%;
+    top: 50%;
+    left: 70px;
+    transform: translateY(-50%);
+}
+
+.text {
+    margin-bottom: 15px;
+    color: white;
+}
+
+#description .about-text {
+    text-transform: uppercase;
+    color: rgb(255, 199, 33);
+}
+
+#description .about-description {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+#description .apply-button{
+    display: inline-block;
+    height: 70px;
+    width: 150px;
+    line-height: 70px;
+    text-align: center;
+    background-color: rgb(236, 54, 54);
+    border-radius: 5px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#content {
+    width: 80%;
+    margin: auto;
+}
+
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.details {
+    width: 100%;
+    padding-top: 60px;
+    font-size: 45px;
+    color: black;
+    text-align: center;
+}
+
+.detail-card {
+    width: 30%;
+    min-width: 300px;
+    transition: all ease-in 0.2s;
+}
+
+.detail-card:hover {
+    transform: scale(1.1);
+}
+
+.card-image {
+    height: 350px;
+    width: auto;
+}
+
+.card-img-title,
+.card-title,
+.card-desc,
+.card-link {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.card-img-title {
+    text-transform: uppercase;
+    color: rgba(128, 128, 128, 0.696);
+}
+
+.card-link {
+    text-transform: uppercase;
+}
+
+
+footer {
+    background-color: rgb(76, 0, 147);
+    padding-top: 30px;
+}
+
+.footer-box {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    border-bottom: 0.5px solid white;
+}
+
+.products {
+    width: 25%;
+    min-width: 200px;
+    margin:10px 0;
+}
+
+footer strong {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer .product-item {
+    position: relative;
+    display: block;
+    color: white;
+    width: fit-content;
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+footer .product-item::after {
+    content: "";
+    height: 1px;
+    width: 0;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width ease-in 0.25s;
+}
+
+footer .product-item:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 1076px) {
+    .navbar-button {
+        display: block;
+        float: right;
+        margin-right: 30px;
+    }
+    .navbar-icon {
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+    }
+
+    .logo {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+
+    nav {
+        display: block;
+        position: fixed;
+        top: 80px;
+        height: calc(100% - 80px);
+        width: 0;
+        overflow: hidden;
+        background-color: grey;
+        transition: width ease-out 0.3s;
+    }
+
+    .main-menu,
+    .accounts-menu {
+        height: auto;
+        display: block;
+    }
+
+    .menu-item,
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0;
+        height: 60px;
+    }
+
+    .menu-item a:hover {
+        color: #18a369;
+    }
+
+    .menu-item a {
+        display: inline-block;
+        line-height: 80px;
+        color: white;
+        height: 100%;
+        padding: 0 10px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    .menu-item a::after {
+        display: none;
+    }
+
+    #intro {
+        background-image: none;
+    }
+
+    #description {
+        width: 80%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <div class="login-box">
+        <div class="login-section">
+            <img src="./images/zoho-logo.png" alt="logo" srcset="">
+            <h2>Sign in</h2>
+            <form action="#" method="post" id="login-form">
+                <label for="email">
+                    <input type="email" name="email" placeholder="Enter email" required />
+                </label>
+                <label for="password">
+                    <input type="password" name="password" placeholder="Enter password" required>
+                </label>
+                <p><a href="#">Sign in using email OTP</a><a href="#">Forgot password?</a></p>
+                <label for="submit">
+                    <input type="submit" value="Sign in">
+                </label>
+            </form>
+            <p class="other-options-text">Try sign in using</p>
+            <div class="login-options">
+                <button class="btn google-btn"></button>
+                <button class="btn facebook-btn"></button>
+                <button class="btn twitter-btn"></button>
+                <button class="btn instagram-btn"></button>
+                <button class="btn whatsapp-btn"></button>
+            </div>
+        </div>
+        <div class="others">
+            <img src="./images/auth.png" alt="zoho" srcset="">
+            <strong>Passwordless sign-in</strong>
+            <p>Move away from risky passwords and experience one-tap access to Zoho. Download and install oneAuth</p>
+            <a href="#" class="learn-more">Learn more</a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+
+</html>
